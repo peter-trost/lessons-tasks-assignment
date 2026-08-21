@@ -12,7 +12,7 @@ abstract class RestClient {
   factory RestClient(Dio dio, {String baseUrl}) = _RestClient;
 
   static const baseUrl =
-      'https://raw.githubusercontent.com/Peetee06/lessons-tasks-assignment/refs/heads/main/';
+      'https://raw.githubusercontent.com/peter-trost/lessons-tasks-assignment/refs/heads/main/';
 
   @GET('/mock_lessons.json')
   Future<List<Concept>> getConcepts();
